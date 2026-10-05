@@ -1,0 +1,39 @@
+# Verifica que las cuatro fallas sembradas siguen vivas y que las soluciones funcionan.
+# Si alguien corrige un script por accidente y sube el cambio, este flujo lo avisa.
+name: verificar fallas
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  fallas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r instalacion/requirements.txt
+      - name: El verificador de instalación pasa
+        run: |
+          python -m ipykernel install --user --name viernes-vscode --display-name "Python (viernes-vscode)"
+          python instalacion/verificar_instalacion.py
+      - name: Las fallas producen el error esperado
+        run: |
+          set -e
+          cd scripts
+          python 01_explorar_metadatos.py 2>&1 | grep -q "KeyError: 'condicion'"
+          python 02_cargar_conteos.py 2>&1 | grep -q "No cuadran"
+          python 03_normalizar.py 2>&1 | grep -q "FileNotFoundError"
+          python 04_grafico_expresion.py 2>&1 | grep -q "name 'plt' is not defined"
+          echo "Las cuatro fallas están intactas."
+      - name: Las soluciones corren
+        run: |
+          set -e
+          cp soluciones/*.py scripts/
+          cd scripts
+          MPLBACKEND=Agg python 01_limpiar_metadatos.py
+          MPLBACKEND=Agg python 03_celdas_en_un_script.py
+          python 04_log2fc.py

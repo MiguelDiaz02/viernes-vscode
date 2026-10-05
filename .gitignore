@@ -1,0 +1,21 @@
+# Resultados y datos pesados: nunca al repositorio
+results/
+data/raw/
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.bai
+*.h5ad
+*.h5
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+*.egg-info/
+
+# Editor y sistema
+.DS_Store
+Thumbs.db
