@@ -11,3 +11,7 @@ Haz la limpieza del ejercicio 1 directamente en el editor, sobre una copia del C
 
 Pregunta para pensar: ¿cuándo conviene esto y cuándo conviene el script del ejercicio 1?
 (Pista: ¿qué pasa cuando llega el segundo lote de muestras?)
+
+---
+
+Solución: `soluciones/ej02_regex_en_el_editor.md`. Se publica en el repositorio después de la clase.

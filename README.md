@@ -1,7 +1,5 @@
 # viernes-vscode
 
-[![verificar fallas](https://github.com/MiguelDiaz02/viernes-vscode/actions/workflows/verificar-fallas.yml/badge.svg)](https://github.com/MiguelDiaz02/viernes-vscode/actions/workflows/verificar-fallas.yml)
-
 Material de la clase **VS Code desde cero** para el grupo Viernes de Bioinformática.
 30 de octubre de 2026 · Miguel Ángel Díaz Campos · Laboratorio de Fallas Medulares,
 Instituto de Investigaciones Biomédicas, UNAM.
@@ -9,74 +7,30 @@ Instituto de Investigaciones Biomédicas, UNAM.
 Es un proyecto pequeño, con datos inventados, hecho para aprender el editor.
 **Los scripts tienen errores a propósito.** Arreglarlos es parte de la clase.
 
----
-
-## ¿Primera vez en GitHub?
-
-Un **repositorio** es una carpeta con archivos y con el historial de todos sus cambios.
-Esta página es la portada de esa carpeta. No necesitas cuenta de GitHub para descargarla.
-
-Todo lo que está en recuadros gris como este se puede copiar y pegar tal cual:
-
-```bash
-echo "así se ven los comandos"
-```
-
-Pasa el ratón por encima del recuadro y aparece un botón para copiarlo.
+Funciona en **Windows, macOS y Linux**.
 
 ---
 
-## Para la clase: cuatro pasos
+## Empieza aquí
 
-### Paso 1 · Descargar el repositorio
+Prepararte toma alrededor de una hora, **una sola vez**, y debe hacerse **antes de la clase**.
+Cada paso tiene su guía, escrita para quien nunca ha usado la terminal.
 
-Elige **una** de las dos opciones.
+| Paso | Qué haces | Guía |
+| --- | --- | --- |
+| 1 | Instalar VS Code y crear tu cuenta de GitHub | La guía ilustrada que te compartió Miguel |
+| 2 | Instalar Git, descargar este repositorio y aprender lo básico de la terminal | **[primeros-pasos-github](primeros-pasos-github/README.md)** |
+| 3 | Instalar Python y crear el entorno de la clase | **[primeros-pasos-conda](primeros-pasos-conda/README.md)** |
+| 4 | Abrir la carpeta en VS Code | Última sección de la guía del paso 3 |
 
-**Opción fácil, sin Git:** arriba en esta página, botón verde **Code** → **Download ZIP**.
-Descomprime el archivo. La carpeta se llama `viernes-vscode-main`.
-
-**Opción con Git** (recomendada, porque en la clase vamos a usar Git):
-abre una terminal y pega:
-
-```bash
-git clone https://github.com/MiguelDiaz02/viernes-vscode.git
-cd viernes-vscode
-```
-
-¿No tienes Git? Compruébalo con `git --version`. Si no responde con un número, instálalo
-desde [git-scm.com](https://git-scm.com/downloads) o usa la opción fácil.
-
-### Paso 2 · Instalar el entorno de Python
-
-Todo lo necesario está en la carpeta [`instalacion/`](instalacion/README.md), con
-instrucciones paso a paso para Windows, macOS y Linux. La versión corta, si ya tienes conda:
+Al terminar el paso 3, este comando debe decir **Todo listo**:
 
 ```bash
-conda env create -f instalacion/environment.yml
-conda activate viernes-vscode
-python -m ipykernel install --user --name viernes-vscode --display-name "Python (viernes-vscode)"
+python primeros-pasos-conda/verificar_instalacion.py
 ```
 
-**Hazlo antes del día de la clase.** Tarda de 5 a 10 minutos.
-
-### Paso 3 · Comprobar que todo funciona
-
-Con el entorno activado y desde la carpeta del repositorio:
-
-```bash
-python instalacion/verificar_instalacion.py
-```
-
-Si la última línea dice **Todo listo**, ya estás. Si no, cada problema viene con su solución.
-
-### Paso 4 · Abrir en VS Code
-
-En VS Code: **Archivo → Abrir carpeta** → elige `viernes-vscode`.
-Abre la carpeta completa, no un archivo suelto. Es la regla número uno de la clase.
-
-Si VS Code ofrece instalar **extensiones recomendadas** (aviso abajo a la derecha), acepta.
-
-Nada más. El resto lo hacemos juntos.
+¿Algo no funciona? Cada guía tiene una tabla de **Problemas comunes**. Si no sale, escribe a
+g5diazcamposmiguel@gmail.com con una captura de pantalla de todo lo que ves.
 
 ---
 
@@ -84,28 +38,25 @@ Nada más. El resto lo hacemos juntos.
 
 | Carpeta o archivo | Qué contiene |
 | --- | --- |
+| [`primeros-pasos-github/`](primeros-pasos-github/README.md) | Guía de la terminal, Git y GitHub, para Windows, macOS y Linux |
+| [`primeros-pasos-conda/`](primeros-pasos-conda/README.md) | Guía de instalación de Python y del entorno, más los archivos del entorno y el verificador |
 | [`data/`](data/README.md) | Un experimento inventado: células HepG2 en hipoxia. Metadatos sucios a propósito y una matriz de conteos |
 | `scripts/` | Cuatro scripts numerados. Cada uno tiene un error pequeño |
 | `notebooks/` | Un notebook de exploración, para comparar con los scripts |
-| [`ejercicios/`](ejercicios/) | Cinco ejercicios para después de la clase |
-| `soluciones/` | Las soluciones. Intenta primero |
-| [`instalacion/`](instalacion/README.md) | Entorno de conda, requirements de pip y el verificador |
+| [`ejercicios/`](ejercicios/) | Cinco ejercicios para después de la clase. Las soluciones se publican aquí cuando termina la clase |
 | `.vscode/` | Configuración del proyecto para VS Code. No hace falta tocarla |
-| `.devcontainer/` | Entorno listo para GitHub Codespaces o Docker |
+| `.devcontainer/` | Solo para GitHub Codespaces. Si usas tu computadora, ignóralo |
 
 ## Los cuatro errores
 
-Cada script falla por algo pequeño, del tipo que aparece todos los días.
-Se arregla en menos de un minuto y cada arreglo es un commit de Git.
+Cada script tiene un error pequeño, del tipo que aparece todos los días. Los arreglamos juntos en
+la clase, uno por uno, y cada arreglo es un commit de Git. **No los arregles antes**: vale la pena
+ver el error aparecer.
 
-| Script | Qué hace | Por qué falla |
-| --- | --- | --- |
-| `01_explorar_metadatos.py` | Resume las muestras | Un nombre de columna mal escrito |
-| `02_cargar_conteos.py` | Carga la matriz de conteos | Lee un archivo con tabuladores como si tuviera comas |
-| `03_normalizar.py` | Calcula log2(CPM + 1) | Usa una ruta que solo existía en otra computadora |
-| `04_grafico_expresion.py` | Grafica genes de hipoxia | Le falta una línea de `import` |
-
-No los arregles antes de la clase. Vale la pena ver el error aparecer.
+Los arreglos no se hacen sobre `main`, sino en una rama propia llamada `clase-en-vivo`
+(**la creamos juntos en la clase**; si quieres adelantarte, abajo a la izquierda, clic en `main` →
+**Create new branch** → `clase-en-vivo`). Así `main` conserva los errores para que cualquiera
+pueda repetir la clase, y tus commits se quedan en tu computadora.
 
 ---
 
@@ -113,7 +64,7 @@ No los arregles antes de la clase. Vale la pena ver el error aparecer.
 
 ### Los ejercicios
 
-En [`ejercicios/`](ejercicios/), en orden. Cubren lo que no cupo en 45 minutos:
+En [`ejercicios/`](ejercicios/), en orden. Cubren lo que no cupo en 45 minutos. Cada uno nombra el archivo que debes crear:
 
 1. Limpiar los metadatos con pandas
 2. Limpiar los mismos metadatos solo con el editor y expresiones regulares
@@ -123,48 +74,13 @@ En [`ejercicios/`](ejercicios/), en orden. Cubren lo que no cupo en 45 minutos:
 
 ### Guardar tu trabajo con Git
 
-Si descargaste con `git clone`, cada cambio que hagas se puede guardar en el historial
-desde el panel de control de versiones de VS Code (Ctrl+Shift+G): escribe un mensaje y
-pulsa **Commit**. Todo queda en tu computadora; no necesitas cuenta.
-
-### Tener tu propia copia en GitHub
-
-Con cuenta de GitHub, botón **Fork** arriba a la derecha de esta página. Crea una copia
-del repositorio en tu cuenta, donde puedes subir tus cambios. Luego clona **tu** copia:
-
-```bash
-git clone https://github.com/TU_USUARIO/viernes-vscode.git
-```
-
-Cambia `TU_USUARIO` por tu nombre de usuario de GitHub.
+Cada cambio que hagas se puede guardar en el historial desde el panel de control de
+versiones de VS Code (Ctrl+Shift+G): escribe un mensaje y pulsa **Commit**. Todo queda en
+tu computadora. **No pulses Sync Changes**: tu copia apunta al repositorio de la clase y no
+tienes permiso para subir ahí. Para tener tu propia copia en GitHub, ver la
+[Parte 6 de la guía de GitHub](primeros-pasos-github/README.md#parte-6--opcional-tu-propia-copia-en-github).
 
 ---
-
-## Problemas frecuentes
-
-**`git` o `conda` no se reconoce como comando.** No está instalado, o la terminal se
-abrió antes de instalarlo. Cierra la terminal, abre otra, y revisa
-[`instalacion/README.md`](instalacion/README.md).
-
-**`ModuleNotFoundError` al correr un script.** VS Code está usando otro Python.
-Abajo a la derecha, en la barra de estado, haz clic en la versión de Python y elige
-`viernes-vscode`.
-
-**No puedo instalar nada en mi computadora.** Usa GitHub Codespaces: botón **Code** →
-**Codespaces** → **Create codespace on main**. Abre VS Code en el navegador con todo
-instalado. Detalles en [`instalacion/README.md`](instalacion/README.md#ruta-c--github-codespaces-sin-instalar-nada).
-
-**Algo más.** Escríbeme a g5diazcamposmiguel@gmail.com con una captura del error.
-
----
-
-## Para quien da la clase
-
-- [`ERRATAS.md`](ERRATAS.md) dice dónde está cada error y cómo se corrige.
-- [`PUBLICAR.md`](PUBLICAR.md) explica cómo subir el repositorio a GitHub, con y sin cuenta.
-- Un flujo de GitHub Actions comprueba en cada cambio que los cuatro errores siguen ahí y
-  que las soluciones funcionan. Si el distintivo de arriba está en rojo, alguien corrigió
-  un script y lo subió a `main`.
 
 ## Licencia
 

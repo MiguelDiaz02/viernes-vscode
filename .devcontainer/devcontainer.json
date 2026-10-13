@@ -1,7 +1,7 @@
 {
   "name": "viernes-vscode",
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
-  "postCreateCommand": "pip install -r instalacion/requirements.txt && python -m ipykernel install --user --name viernes-vscode --display-name 'Python (viernes-vscode)'",
+  "postCreateCommand": "pip install -r primeros-pasos-conda/requirements.txt && python -m ipykernel install --user --name viernes-vscode --display-name 'Python (viernes-vscode)'",
   "customizations": {
     "vscode": {
       "extensions": [

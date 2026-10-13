@@ -12,3 +12,7 @@ Quieres probar una normalización distinta (TPM en lugar de CPM) sin tocar lo qu
 6. Opcional: desde `main`, paleta de comandos → **Git: Merge Branch** → `tpm`.
 
 Si tienes remoto, publica la rama con **Publish Branch** y mírala en GitHub.
+
+---
+
+Solución: `soluciones/ej05_ramas_de_git.md`. Se publica en el repositorio después de la clase.

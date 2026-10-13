@@ -1,4 +1,4 @@
-# Verifica que las cuatro fallas sembradas siguen vivas y que las soluciones funcionan.
+# Verifica que el entorno se instala y que las cuatro fallas sembradas siguen vivas.
 # Si alguien corrige un script por accidente y sube el cambio, este flujo lo avisa.
 name: verificar fallas
 
@@ -15,11 +15,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -r instalacion/requirements.txt
+      - run: pip install -r primeros-pasos-conda/requirements.txt
       - name: El verificador de instalación pasa
         run: |
           python -m ipykernel install --user --name viernes-vscode --display-name "Python (viernes-vscode)"
-          python instalacion/verificar_instalacion.py
+          python primeros-pasos-conda/verificar_instalacion.py
       - name: Las fallas producen el error esperado
         run: |
           set -e
@@ -29,11 +29,3 @@ jobs:
           python 03_normalizar.py 2>&1 | grep -q "FileNotFoundError"
           python 04_grafico_expresion.py 2>&1 | grep -q "name 'plt' is not defined"
           echo "Las cuatro fallas están intactas."
-      - name: Las soluciones corren
-        run: |
-          set -e
-          cp soluciones/*.py scripts/
-          cd scripts
-          MPLBACKEND=Agg python 01_limpiar_metadatos.py
-          MPLBACKEND=Agg python 03_celdas_en_un_script.py
-          python 04_log2fc.py

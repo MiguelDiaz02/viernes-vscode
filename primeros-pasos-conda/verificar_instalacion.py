@@ -2,13 +2,14 @@
 
 Uso, desde la carpeta del repositorio y con el entorno activado:
 
-    python instalacion/verificar_instalacion.py
+    python primeros-pasos-conda/verificar_instalacion.py
 
 Si todas las líneas dicen [OK], ya estás listo para la clase.
 """
 
 import importlib
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -42,12 +43,28 @@ else:
         "activa el entorno: conda activate viernes-vscode",
     )
 
+if v >= (3, 14):
+    aviso(
+        f"Python {v.major}.{v.minor} es demasiado nuevo: algunos paquetes todavía no "
+        "tienen versiones estables para él y el kernel de los notebooks puede fallar. "
+        "Usa el entorno de la clase (Python 3.12): conda activate viernes-vscode"
+    )
+
 # 2. ¿Es el entorno de la clase?
 print(f"          usando: {sys.executable}")
 if "viernes-vscode" not in sys.executable and ".venv" not in sys.executable:
     aviso(
         "este Python no parece ser el entorno 'viernes-vscode'. "
         "Si algo de abajo falla, ejecuta primero: conda activate viernes-vscode"
+    )
+
+if sys.platform.startswith("win") and not (
+    sys.prefix.isascii() and " " not in sys.prefix
+):
+    falta(
+        f"el entorno está en una ruta con acentos o espacios ({sys.prefix}) y se romperá al activarlo",
+        "borra el entorno (conda env remove -n viernes-vscode -y), luego ejecuta "
+        "conda config --add envs_dirs C:\\Users\\Public\\conda-envs y repite conda env create",
     )
 
 # 3. Paquetes
@@ -73,8 +90,48 @@ for nombre, minimo in paquetes:
     except ImportError:
         falta(
             f"{nombre} no está instalado en este Python",
-            "conda env create -f instalacion/environment.yml  (o revisa que el entorno esté activado)",
+            "conda env create -f primeros-pasos-conda/environment.yml  (o revisa que el entorno esté activado)",
         )
+
+# 3b. Backend de matplotlib: con Qt instalado, el kernel de los notebooks se cae
+try:
+    import matplotlib
+
+    backend = matplotlib.get_backend()
+    if "qt" in backend.lower():
+        falta(
+            f"matplotlib usa el backend '{backend}' (Qt) y el kernel de los notebooks se cae",
+            "borra y recrea el entorno: conda env remove -n viernes-vscode  y luego  "
+            "conda env create -f primeros-pasos-conda/environment.yml",
+        )
+    else:
+        ok(f"matplotlib usa el backend '{backend}'")
+except ImportError:
+    pass
+
+# 3c. Álgebra lineal (BLAS): una DLL incompatible mata el proceso sin traceback.
+# Se prueba en un proceso aparte para que, si se cae, el verificador pueda avisar.
+try:
+    prueba = subprocess.run(
+        [
+            sys.executable,
+            "-c",
+            "import numpy as np; np.linalg.inv(np.eye(2)); np.eye(3) @ np.eye(3)",
+        ],
+        check=False,
+        capture_output=True,
+        timeout=120,
+    )
+    if prueba.returncode == 0:
+        ok("álgebra lineal de numpy (BLAS) funciona")
+    else:
+        falta(
+            f"numpy se cae al hacer álgebra lineal (código {prueba.returncode & 0xFFFFFFFF:#x}); "
+            "los gráficos de los notebooks matarían el kernel",
+            'conda install -n viernes-vscode "libblas=*=*openblas"  y vuelve a correr este verificador',
+        )
+except (OSError, subprocess.SubprocessError):
+    aviso("No se pudo probar el álgebra lineal de numpy.")
 
 # 4. Ruff (opcional)
 if shutil.which("ruff"):
@@ -103,7 +160,7 @@ try:
         aviso(
             "el kernel no está registrado con nombre propio. VS Code igual lo encuentra, "
             "pero para verlo con nombre claro ejecuta:\n"
-            '          python -m ipykernel install --user --name viernes-vscode '
+            "          python -m ipykernel install --user --name viernes-vscode "
             '--display-name "Python (viernes-vscode)"'
         )
 except ImportError:
@@ -113,7 +170,9 @@ except ImportError:
 print()
 if problemas:
     print(f"Hay {len(problemas)} cosa(s) por resolver. Sigue las flechas -> de arriba.")
-    print("Si te atoras, revisa la sección 'Problemas comunes' en instalacion/README.md\n")
+    print(
+        "Si te atoras, revisa la sección 'Problemas comunes' en primeros-pasos-conda/README.md\n"
+    )
     sys.exit(1)
 else:
     print("Todo listo. Nos vemos en la clase.\n")

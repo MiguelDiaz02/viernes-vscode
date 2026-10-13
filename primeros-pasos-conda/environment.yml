@@ -1,0 +1,30 @@
+# Entorno de la clase "VS Code desde cero" · Viernes de Bioinformática
+#
+# Instalar (una sola vez, desde la carpeta del repositorio):
+#   conda env create -f primeros-pasos-conda/environment.yml
+#
+# Activar:
+#   conda activate viernes-vscode
+#
+# Registrar el kernel para notebooks (opcional pero recomendado):
+#   python -m ipykernel install --user --name viernes-vscode --display-name "Python (viernes-vscode)"
+#
+# Comprobar que todo quedó bien:
+#   python primeros-pasos-conda/verificar_instalacion.py
+
+name: viernes-vscode
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pandas>=2.2
+  - numpy
+  # BLAS = OpenBLAS, NO MKL: en conda-forge (oct 2026) la combinación mkl + llvm-openmp
+  # en Windows mata el kernel (código 0xC06D007F) en la primera operación de álgebra
+  # lineal, que es justo la que hace pandas al graficar. OpenBLAS no usa esa capa.
+  - "libblas=*=*openblas"
+  # matplotlib-base, NO matplotlib: en conda-forge "matplotlib" arrastra Qt/PySide6
+  # y en Windows el kernel de Jupyter se cae al graficar (backend qtagg).
+  - matplotlib-base>=3.9
+  - ipykernel
+  - ruff

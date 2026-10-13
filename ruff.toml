@@ -1,0 +1,5 @@
+# Configuración de Ruff para el proyecto.
+# "utils" es el módulo local scripts/utils.py, no un paquete instalado:
+# así Ruff lo ordena como código propio y no marca falsos avisos de imports.
+[lint.isort]
+known-first-party = ["utils"]

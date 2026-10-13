@@ -19,3 +19,4 @@ __pycache__/
 # Editor y sistema
 .DS_Store
 Thumbs.db
+.ruff_cache/
