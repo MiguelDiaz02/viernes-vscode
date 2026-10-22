@@ -18,7 +18,7 @@ Cada paso tiene su guía, escrita para quien nunca ha usado la terminal.
 
 | Paso | Qué haces | Guía |
 | --- | --- | --- |
-| 1 | Instalar VS Code y crear tu cuenta de GitHub | La guía ilustrada que te compartió Miguel |
+| 1 | Instalar VS Code y crear tu cuenta de GitHub | **[INSTALACION_VISUAL_STUDIO_CODE.pdf](INSTALACION_VISUAL_STUDIO_CODE.pdf)** (VS Code) + los pasos en [primeros-pasos-github](primeros-pasos-github/README.md#antes-de-empezar) (cuenta de GitHub) |
 | 2 | Instalar Git, descargar este repositorio y aprender lo básico de la terminal | **[primeros-pasos-github](primeros-pasos-github/README.md)** |
 | 3 | Instalar Python y crear el entorno de la clase | **[primeros-pasos-conda](primeros-pasos-conda/README.md)** |
 | 4 | Abrir la carpeta en VS Code | Última sección de la guía del paso 3 |
@@ -38,6 +38,7 @@ g5diazcamposmiguel@gmail.com con una captura de pantalla de todo lo que ves.
 
 | Carpeta o archivo | Qué contiene |
 | --- | --- |
+| [`INSTALACION_VISUAL_STUDIO_CODE.pdf`](INSTALACION_VISUAL_STUDIO_CODE.pdf) | Guía ilustrada, paso a paso, para instalar VS Code en Windows, macOS y Linux |
 | [`primeros-pasos-github/`](primeros-pasos-github/README.md) | Guía de la terminal, Git y GitHub, para Windows, macOS y Linux |
 | [`primeros-pasos-conda/`](primeros-pasos-conda/README.md) | Guía de instalación de Python y del entorno, más los archivos del entorno y el verificador |
 | [`data/`](data/README.md) | Un experimento inventado: células HepG2 en hipoxia. Metadatos sucios a propósito y una matriz de conteos |

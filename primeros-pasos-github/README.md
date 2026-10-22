@@ -10,10 +10,14 @@ No necesitas saber nada. Solo copiar, pegar y comparar lo que ves con lo que dic
 
 ## Antes de empezar
 
-Necesitas dos cosas que se explican en la **guía ilustrada** que te compartió Miguel:
+Necesitas dos cosas:
 
-1. **VS Code** instalado. Si no lo tienes: [code.visualstudio.com](https://code.visualstudio.com/).
-2. Una **cuenta de GitHub** (gratis). Si no la tienes: [github.com/signup](https://github.com/signup).
+1. **VS Code** instalado. Sigue la guía ilustrada: **[INSTALACION_VISUAL_STUDIO_CODE.pdf](../INSTALACION_VISUAL_STUDIO_CODE.pdf)**.
+2. Una **cuenta de GitHub** (gratis):
+   1. Entra a [github.com/signup](https://github.com/signup).
+   2. Escribe tu correo, crea una contraseña y elige un nombre de usuario (no tiene que ser tu nombre real).
+   3. Verifica tu correo cuando GitHub te lo pida (revisa spam si no llega).
+   4. Con eso ya está: no hace falta configurar nada más por ahora.
 
 La cuenta es opcional para seguir la clase. Sin cuenta puedes hacer todo menos subir tus cambios a internet.
 
