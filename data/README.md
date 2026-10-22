@@ -1,4 +1,67 @@
-# El experimento (inventado)
+# Los datos de la clase
+
+Datos reales de **hepatocarcinoma** (carcinoma hepatocelular), reducidos para que se
+puedan leer y analizar en un par de segundos.
+
+**Fuente:** proyecto TCGA Liver Hepatocellular Carcinoma (TCGA-LIHC), versión *Firehose Legacy*,
+tomado del repositorio público de cBioPortal (estudio `lihc_tcga`). Son datos de acceso abierto.
+Si los usas en un trabajo, cita al TCGA Research Network:
+*Comprehensive and Integrative Genomic Characterization of Hepatocellular Carcinoma*,
+Cell, 2017, 169(7):1327-1341.
+
+## Qué le quitamos al original
+
+| Original | Aquí |
+| --- | --- |
+| 20 531 genes | **12 genes** |
+| 373 muestras de tumor | **371 tumores primarios** (muestras que terminan en `-01`) |
+| 74 variables clínicas | **7 variables** |
+
+Los 12 genes se eligieron porque cuentan una historia:
+
+| Grupo | Genes | Qué esperamos |
+| --- | --- | --- |
+| Tumor agresivo | `AFP`, `GPC3` | Más expresión en tumores de grado alto |
+| Proliferación | `MKI67`, `TOP2A` | Más expresión en tumores de grado alto |
+| Hipoxia | `CA9`, `VEGFA`, `SLC2A1` | Varían, sobre todo `CA9` |
+| Función hepática | `ALB`, `APOA1`, `TTR` | Menos expresión en tumores de grado alto |
+| Genes de referencia | `GAPDH`, `ACTB` | Casi no cambian |
+
+## `hcc_expresion.csv`
+
+Genes en **filas** y muestras en **columnas**, como llegan los datos de TCGA. El valor es la
+expresión normalizada por RSEM (cuentas estimadas, sin transformar).
+
+- Primera columna: `gen`
+- Las demás columnas: una muestra cada una, por ejemplo `TCGA-2V-A95S-01`
+
+El identificador de la muestra termina en `-01` (tumor primario). Para unir esta tabla con la
+clínica hay que quitar ese final y quedarse con el paciente: `TCGA-2V-A95S`.
+
+## `hcc_clinicos.csv`
+
+Una fila por paciente.
+
+| Columna | Qué es |
+| --- | --- |
+| `id_paciente` | Identificador del paciente, por ejemplo `TCGA-2V-A95S` |
+| `edad` | Edad al diagnóstico, en años |
+| `sexo` | `Male` o `Female` |
+| `grado` | Grado histológico del tumor: G1 (bien diferenciado) a G4 (poco diferenciado) |
+| `estadio` | Estadio AJCC (Stage I a IV) |
+| `factor_riesgo` | Factores de riesgo conocidos; puede haber varios separados por `\|` |
+| `estado_vital` | `0:LIVING` o `1:DECEASED` |
+| `meses_supervivencia` | Meses de seguimiento |
+
+**Los valores faltantes vienen como texto**, igual que en el original: `[Not Available]`,
+`[Not Applicable]`, `[Unknown]` o `[Discrepancy]`. Pandas no sabe que eso significa «vacío»;
+hay que decírselo al leer el archivo (`na_values=`). Pasa todo el tiempo con datos reales.
+
+Los valores `Male`, `Female` y los estadios se dejaron en inglés, como están en el original.
+
+---
+
+# Los datos de la práctica en casa: un experimento inventado
 
 Células HepG2 (hepatocarcinoma humano) cultivadas en normoxia o expuestas a hipoxia
 (1 % O₂) durante 6 o 24 horas. Cuatro réplicas por condición, en dos lotes de cultivo.
