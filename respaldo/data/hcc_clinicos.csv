@@ -1,0 +1,372 @@
+id_paciente,edad,sexo,grado,estadio,factor_riesgo,estado_vital,meses_supervivencia
+TCGA-2V-A95S,[Not Available],Male,G3,Stage II,Other,0:LIVING,[Not Available]
+TCGA-2Y-A9GS,58,Male,G2,[Discrepancy],Alcohol consumption,1:DECEASED,23.78
+TCGA-2Y-A9GT,51,Male,G2,Stage I,Alcohol consumption|Hepatitis B|Hepatitis C,1:DECEASED,53.35
+TCGA-2Y-A9GU,55,Female,G2,Stage I,No History of Primary Risk Factors,0:LIVING,63.7
+TCGA-2Y-A9GV,54,Female,G1,Stage I,Alcohol consumption,1:DECEASED,83.18
+TCGA-2Y-A9GW,64,Male,G2,Stage I,Alcohol consumption,1:DECEASED,41.75
+TCGA-2Y-A9GX,68,Male,G2,Stage I,Alcohol consumption,0:LIVING,80.22
+TCGA-2Y-A9GY,64,Female,G3,Stage II,No History of Primary Risk Factors,1:DECEASED,24.87
+TCGA-2Y-A9GZ,82,Female,G2,Stage II,No History of Primary Risk Factors,1:DECEASED,27.86
+TCGA-2Y-A9H0,49,Male,G1,Stage IIIA,Alcohol consumption|Hepatitis B|Hepatitis C,0:LIVING,120.73
+TCGA-2Y-A9H1,58,Male,G2,Stage I,Alcohol consumption|Hepatitis C,1:DECEASED,40.37
+TCGA-2Y-A9H2,64,Female,G3,Stage I,Alcohol consumption,0:LIVING,56.87
+TCGA-2Y-A9H3,45,Male,G1,Stage II,Alcohol consumption|Non-Alcoholic Fatty Liver Disease,0:LIVING,49.8
+TCGA-2Y-A9H4,68,Male,G2,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,47.7
+TCGA-2Y-A9H5,59,Female,G3,Stage I,Alcohol consumption|Hepatitis C,1:DECEASED,18.23
+TCGA-2Y-A9H6,68,Female,G2,Stage I,Alcohol consumption,0:LIVING,11.73
+TCGA-2Y-A9H7,81,Female,G2,Stage I,No History of Primary Risk Factors,0:LIVING,38.37
+TCGA-2Y-A9H8,85,Female,G2,[Discrepancy],Alcohol consumption,1:DECEASED,20.8
+TCGA-2Y-A9H9,70,Male,G2,Stage I,Alcohol consumption|Hepatitis C,0:LIVING,22.9
+TCGA-2Y-A9HA,70,Male,G2,Stage II,Alcohol consumption|Hepatitis C,1:DECEASED,1.18
+TCGA-2Y-A9HB,66,Male,G2,Stage I,Alcohol consumption,0:LIVING,8.54
+TCGA-3K-AAZ8,65,Male,G1,Stage IIIB,Hepatitis C,0:LIVING,13.01
+TCGA-4R-AA8I,66,Male,G2,Stage II,Non-Alcoholic Fatty Liver Disease,1:DECEASED,8.61
+TCGA-5C-A9VG,58,Male,G2,Stage II,Other,0:LIVING,10.78
+TCGA-5C-A9VH,70,Male,G2,Stage I,No History of Primary Risk Factors,0:LIVING,10.58
+TCGA-5C-AAPD,61,Male,G1,Stage II,Hepatitis B,0:LIVING,0.66
+TCGA-5R-AA1C,57,Male,G2,Stage II,No History of Primary Risk Factors,0:LIVING,17.08
+TCGA-5R-AA1D,17,Female,G3,Stage IIIA,No History of Primary Risk Factors,0:LIVING,14.75
+TCGA-5R-AAAM,65,Female,G2,Stage II,No History of Primary Risk Factors,1:DECEASED,1.51
+TCGA-BC-4072,74,Female,G3,Stage IIIA,No History of Primary Risk Factors,1:DECEASED,48.95
+TCGA-BC-4073,73,Male,G3,Stage IIIA,Hemochromatosis,0:LIVING,27.89
+TCGA-BC-A10Q,72,Female,[Not Available],[Not Available],No History of Primary Risk Factors,1:DECEASED,37.29
+TCGA-BC-A10R,66,Female,G2,[Not Available],No History of Primary Risk Factors,1:DECEASED,10.12
+TCGA-BC-A10S,81,Male,G1,[Not Available],Alcohol consumption,1:DECEASED,46.75
+TCGA-BC-A10T,76,Male,G1,[Not Available],No History of Primary Risk Factors,1:DECEASED,27.5
+TCGA-BC-A10U,69,Male,G2,[Not Available],Alcohol consumption,1:DECEASED,27.5
+TCGA-BC-A10W,50,Male,G3,[Not Available],Hepatitis B,1:DECEASED,2.99
+TCGA-BC-A10X,52,Female,G2,Stage IIIA,No History of Primary Risk Factors,1:DECEASED,25.3
+TCGA-BC-A10Y,76,Male,G3,[Not Available],Alcohol consumption,1:DECEASED,23.36
+TCGA-BC-A10Z,62,Female,G2,Stage I,No History of Primary Risk Factors,1:DECEASED,1.12
+TCGA-BC-A110,51,Female,G1,[Not Available],Alcohol consumption,1:DECEASED,69.51
+TCGA-BC-A112,80,Male,G2,[Not Available],Alcohol consumption,1:DECEASED,5.03
+TCGA-BC-A216,62,Female,G2,Stage IIIA,No History of Primary Risk Factors,0:LIVING,44.38
+TCGA-BC-A217,75,Female,G3,Stage II,Alcohol consumption,1:DECEASED,45.89
+TCGA-BC-A3KF,66,Female,G2,Stage I,No History of Primary Risk Factors,0:LIVING,0.26
+TCGA-BC-A3KG,68,Female,G3,Stage II,Alcohol consumption,0:LIVING,22.34
+TCGA-BC-A5W4,69,Male,G3,Stage IIIA,Alcohol consumption,1:DECEASED,17.97
+TCGA-BC-A69H,64,Male,G3,Stage II,Alcohol consumption,0:LIVING,14.59
+TCGA-BC-A69I,69,Male,G1,Stage I,No History of Primary Risk Factors,0:LIVING,12.71
+TCGA-BC-A8YO,66,Female,G3,Stage IIIC,Alcohol consumption|Other,0:LIVING,18.46
+TCGA-BD-A2L6,69,Male,G2,[Not Available],Alcohol consumption,0:LIVING,44.78
+TCGA-BD-A3EP,75,Female,G2,Stage I,No History of Primary Risk Factors,0:LIVING,13.44
+TCGA-BD-A3ER,62,Male,G2,Stage II,Hemochromatosis,0:LIVING,36.63
+TCGA-BW-A5NO,50,Male,G2,Stage IIIA,Hepatitis C,0:LIVING,0.66
+TCGA-BW-A5NP,26,Female,G3,Stage IV,Hepatitis B,0:LIVING,0
+TCGA-BW-A5NQ,63,Male,G3,Stage I,Alcohol consumption|Other,0:LIVING,0
+TCGA-CC-5258,48,Male,G2,Stage II,[Not Available],1:DECEASED,4.24
+TCGA-CC-5259,60,Female,G2,Stage IIIC,No History of Primary Risk Factors,0:LIVING,8.21
+TCGA-CC-5260,61,Female,G1,Stage IIIC,[Not Available],1:DECEASED,2.86
+TCGA-CC-5261,44,Male,G2,Stage II,[Not Available],1:DECEASED,3.19
+TCGA-CC-5262,67,Male,G1,Stage IIIC,No History of Primary Risk Factors,1:DECEASED,3.38
+TCGA-CC-5263,35,Male,G1,Stage IIIA,No History of Primary Risk Factors,1:DECEASED,4.24
+TCGA-CC-5264,71,Male,G2,Stage IIIA,[Not Available],1:DECEASED,3.35
+TCGA-CC-A123,24,Female,G1,Stage IIIA,[Not Available],0:LIVING,7.19
+TCGA-CC-A1HT,50,Male,G3,Stage IIIA,No History of Primary Risk Factors,1:DECEASED,3.32
+TCGA-CC-A3M9,45,Male,G3,Stage IIIA,Alcohol consumption,1:DECEASED,9.86
+TCGA-CC-A3MA,61,Male,G2,Stage IIIA,Alcohol consumption,1:DECEASED,9.95
+TCGA-CC-A3MB,36,Male,G1,Stage IIIA,No History of Primary Risk Factors,1:DECEASED,10.35
+TCGA-CC-A3MC,54,Male,G2,Stage IIIA,Alcohol consumption,0:LIVING,11.93
+TCGA-CC-A5UC,63,Male,G3,Stage IIIA,Alcohol consumption,1:DECEASED,11.4
+TCGA-CC-A5UD,45,Male,G2,Stage IIIA,Alcohol consumption,1:DECEASED,9.99
+TCGA-CC-A5UE,48,Male,G2,Stage IIIB,Alcohol consumption,1:DECEASED,8.94
+TCGA-CC-A7IE,57,Male,G2,Stage IIIA,Alcohol consumption,1:DECEASED,7.13
+TCGA-CC-A7IF,59,Male,G1,Stage IIIA,Alcohol consumption,1:DECEASED,21.32
+TCGA-CC-A7IG,47,Male,G2,Stage II,Alcohol consumption,1:DECEASED,9.82
+TCGA-CC-A7IH,58,Male,G1,Stage IIIA,Alcohol consumption,0:LIVING,11.99
+TCGA-CC-A7II,54,Male,G3,Stage IIIA,Alcohol consumption,0:LIVING,13.11
+TCGA-CC-A7IJ,56,Male,G3,Stage II,Alcohol consumption,0:LIVING,12.55
+TCGA-CC-A7IK,59,Male,G3,Stage IIIA,Alcohol consumption,1:DECEASED,8.61
+TCGA-CC-A7IL,61,Male,G1,Stage IIIA,Alcohol consumption,1:DECEASED,9.13
+TCGA-CC-A8HS,18,Male,G1,Stage IIIC,No History of Primary Risk Factors,1:DECEASED,9.86
+TCGA-CC-A8HT,74,Male,G2,Stage IIIA,Alcohol consumption,1:DECEASED,4.6
+TCGA-CC-A8HU,39,Female,G3,Stage IIIA,No History of Primary Risk Factors,1:DECEASED,11.3
+TCGA-CC-A8HV,51,Female,G2,Stage II,No History of Primary Risk Factors,1:DECEASED,9.17
+TCGA-CC-A9FS,55,Male,G2,Stage II,Alcohol consumption,0:LIVING,6.93
+TCGA-CC-A9FU,52,Female,G2,Stage IIIA,Hepatitis B,0:LIVING,0
+TCGA-CC-A9FV,57,Male,G2,Stage IIIA,Alcohol consumption,0:LIVING,0
+TCGA-CC-A9FW,68,Male,G2,Stage IIIA,Alcohol consumption,0:LIVING,8.15
+TCGA-DD-A113,55,Female,G3,Stage II,Other,0:LIVING,79.66
+TCGA-DD-A114,42,Male,G3,Stage II,Hepatitis C,1:DECEASED,37.75
+TCGA-DD-A115,53,Male,G2,Stage IIIA,Alcohol consumption,1:DECEASED,83.51
+TCGA-DD-A116,68,Male,G3,Stage IIIA,Hepatitis B,1:DECEASED,53.29
+TCGA-DD-A118,77,Female,G2,Stage II,[Not Available],0:LIVING,112.91
+TCGA-DD-A119,40,Male,G3,Stage IV,Hepatitis B,1:DECEASED,7.33
+TCGA-DD-A11A,67,Male,G3,Stage I,Other,0:LIVING,2.6
+TCGA-DD-A11B,73,Male,G2,Stage I,Non-Alcoholic Fatty Liver Disease,1:DECEASED,0.46
+TCGA-DD-A11C,69,Male,G3,Stage I,[Not Available],0:LIVING,21.75
+TCGA-DD-A11D,57,Female,G2,Stage I,Non-Alcoholic Fatty Liver Disease,1:DECEASED,51.25
+TCGA-DD-A1EA,68,Male,G2,Stage II,Hepatitis B,0:LIVING,79.34
+TCGA-DD-A1EB,72,Female,G2,Stage I,Other,0:LIVING,66.26
+TCGA-DD-A1EC,20,Female,G3,Stage I,[Not Available],0:LIVING,19.78
+TCGA-DD-A1ED,68,Male,G1,Stage I,Alcohol consumption,0:LIVING,75.59
+TCGA-DD-A1EE,73,Male,G3,Stage IIIA,Hepatitis C,1:DECEASED,11.47
+TCGA-DD-A1EF,57,Female,G3,Stage I,No History of Primary Risk Factors,1:DECEASED,12.94
+TCGA-DD-A1EG,76,Male,G3,Stage I,Alcohol consumption|Non-Alcoholic Fatty Liver Disease,1:DECEASED,45.07
+TCGA-DD-A1EH,23,Male,G3,Stage III,Hepatitis B,0:LIVING,49.11
+TCGA-DD-A1EI,46,Male,G2,Stage I,Hepatitis B,0:LIVING,6.01
+TCGA-DD-A1EJ,71,Female,G2,Stage IIIC,No History of Primary Risk Factors,1:DECEASED,33.02
+TCGA-DD-A1EK,64,Female,G2,Stage IVB,Other,1:DECEASED,18.33
+TCGA-DD-A1EL,23,Male,G3,Stage II,Hepatitis B,1:DECEASED,13.63
+TCGA-DD-A39V,77,Male,G3,Stage II,No History of Primary Risk Factors,1:DECEASED,21.12
+TCGA-DD-A39W,29,Female,G2,Stage III,No History of Primary Risk Factors,1:DECEASED,27.17
+TCGA-DD-A39X,78,Female,G2,Stage I,No History of Primary Risk Factors,1:DECEASED,55.65
+TCGA-DD-A39Y,67,Male,G3,Stage I,No History of Primary Risk Factors,1:DECEASED,5.62
+TCGA-DD-A39Z,43,Female,G2,Stage II,Alcohol consumption,1:DECEASED,19.74
+TCGA-DD-A3A1,65,Male,G2,Stage IIIA,No History of Primary Risk Factors,1:DECEASED,7.65
+TCGA-DD-A3A2,76,Female,G1,Stage I,No History of Primary Risk Factors,1:DECEASED,70.01
+TCGA-DD-A3A3,45,Male,G2,Stage I,No History of Primary Risk Factors,1:DECEASED,17.58
+TCGA-DD-A3A4,37,Male,G3,Stage IIIA,Other,1:DECEASED,20.11
+TCGA-DD-A3A5,66,Female,G2,Stage III,No History of Primary Risk Factors,1:DECEASED,102.66
+TCGA-DD-A3A6,72,Female,G2,Stage II,No History of Primary Risk Factors,1:DECEASED,107.03
+TCGA-DD-A3A7,67,Male,G3,Stage IIIB,Alcohol consumption|Other,1:DECEASED,13.76
+TCGA-DD-A3A8,75,Male,G2,Stage II,No History of Primary Risk Factors,1:DECEASED,0.36
+TCGA-DD-A3A9,64,Female,G2,Stage IVB,Other,1:DECEASED,30.58
+TCGA-DD-A4NA,67,Female,G3,Stage IIIC,No History of Primary Risk Factors,0:LIVING,33.11
+TCGA-DD-A4NB,25,Male,G2,Stage I,No History of Primary Risk Factors,0:LIVING,32.49
+TCGA-DD-A4ND,56,Female,G3,Stage I,No History of Primary Risk Factors,0:LIVING,90.21
+TCGA-DD-A4NE,75,Female,G3,Stage IIIA,No History of Primary Risk Factors,1:DECEASED,21.68
+TCGA-DD-A4NF,72,Male,G2,Stage I,Hepatitis C,0:LIVING,30.95
+TCGA-DD-A4NG,77,Male,G2,Stage IIIA,Alcohol consumption,1:DECEASED,26.35
+TCGA-DD-A4NH,65,Female,G3,Stage IIIB,Alcohol consumption,0:LIVING,30.12
+TCGA-DD-A4NI,67,Male,G2,Stage II,Alcohol consumption|Non-Alcoholic Fatty Liver Disease,0:LIVING,26.81
+TCGA-DD-A4NJ,54,Female,G2,Stage II,Non-Alcoholic Fatty Liver Disease,0:LIVING,30.49
+TCGA-DD-A4NK,80,Female,G2,Stage IIIA,No History of Primary Risk Factors,1:DECEASED,39.75
+TCGA-DD-A4NL,46,Male,G1,Stage I,Alcohol consumption|Other,0:LIVING,56.21
+TCGA-DD-A4NN,56,Female,G3,Stage I,No History of Primary Risk Factors,1:DECEASED,29.53
+TCGA-DD-A4NO,65,Male,G1,Stage I,Hepatitis C|Other,0:LIVING,73.75
+TCGA-DD-A4NP,32,Male,G3,Stage I,No History of Primary Risk Factors,0:LIVING,108.67
+TCGA-DD-A4NQ,60,Male,G3,Stage II,Hepatitis B|Other,1:DECEASED,12.25
+TCGA-DD-A4NR,85,Female,G3,Stage I,Other,1:DECEASED,0.3
+TCGA-DD-A4NS,61,Female,G2,Stage I,Alcohol consumption,1:DECEASED,80.68
+TCGA-DD-A4NV,61,Male,G1,Stage IIIA,Non-Alcoholic Fatty Liver Disease|Other,0:LIVING,78.78
+TCGA-DD-A73A,71,Male,G2,Stage I,Alcohol consumption,0:LIVING,23.92
+TCGA-DD-A73B,72,Female,G2,Stage I,Alpha-1 Antitrypsin Deficiency|Other,1:DECEASED,9.3
+TCGA-DD-A73C,65,Female,G1,Stage IIIA,No History of Primary Risk Factors,0:LIVING,23.03
+TCGA-DD-A73D,68,Female,G1,Stage II,Hepatitis C,0:LIVING,22.77
+TCGA-DD-A73E,66,Male,G1,Stage I,Alcohol consumption|Non-Alcoholic Fatty Liver Disease,0:LIVING,1.45
+TCGA-DD-A73F,77,Female,G1,Stage I,No History of Primary Risk Factors,0:LIVING,35.64
+TCGA-DD-A73G,73,Female,G3,Stage I,No History of Primary Risk Factors,0:LIVING,114.26
+TCGA-DD-AA3A,81,Female,G4,Stage I,No History of Primary Risk Factors,1:DECEASED,13.47
+TCGA-DD-AAC8,72,Male,G3,Stage I,Hepatitis B,1:DECEASED,0.53
+TCGA-DD-AAC9,51,Male,G2,Stage I,Hepatitis B,0:LIVING,11.4
+TCGA-DD-AACA,65,Male,G3,Stage I,Hepatitis B,0:LIVING,75.59
+TCGA-DD-AACB,74,Female,G3,Stage I,Hepatitis B,0:LIVING,76.35
+TCGA-DD-AACC,61,Male,G2,Stage I,Hepatitis B,1:DECEASED,55.35
+TCGA-DD-AACD,48,Male,G4,Stage I,Hepatitis B,1:DECEASED,12.52
+TCGA-DD-AACE,62,Male,G3,Stage I,Hepatitis B,0:LIVING,71.75
+TCGA-DD-AACF,68,Male,G3,Stage I,Hepatitis C,1:DECEASED,11.99
+TCGA-DD-AACG,52,Male,G4,Stage II,Hepatitis B,1:DECEASED,15.41
+TCGA-DD-AACH,69,Male,G3,Stage II,Hepatitis B,1:DECEASED,6.41
+TCGA-DD-AACI,69,Male,G3,Stage II,[Not Available],0:LIVING,53.15
+TCGA-DD-AACJ,75,Male,G2,Stage II,[Not Available],0:LIVING,69.05
+TCGA-DD-AACK,70,Male,G2,Stage I,Hepatitis B,0:LIVING,0.3
+TCGA-DD-AACL,66,Female,G3,Stage I,Hepatitis C,1:DECEASED,3.52
+TCGA-DD-AACN,32,Male,G3,Stage I,Hepatitis B,0:LIVING,42.77
+TCGA-DD-AACO,40,Male,G3,Stage I,Hepatitis B,0:LIVING,61.63
+TCGA-DD-AACP,64,Male,G3,Stage I,Alcohol consumption,0:LIVING,13.63
+TCGA-DD-AACQ,50,Male,G3,Stage II,Hepatitis B,1:DECEASED,14.19
+TCGA-DD-AACS,39,Male,G3,Stage I,Hepatitis B,0:LIVING,59.26
+TCGA-DD-AACT,69,Female,G2,Stage I,Hepatitis B,0:LIVING,51.31
+TCGA-DD-AACU,59,Male,G3,Stage I,Hepatitis B,0:LIVING,51.48
+TCGA-DD-AACV,53,Male,G3,Stage I,Alcohol consumption,0:LIVING,50.3
+TCGA-DD-AACW,43,Male,G3,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,46.78
+TCGA-DD-AACX,66,Male,G3,Stage II,Alcohol consumption|Hepatitis B,0:LIVING,5.58
+TCGA-DD-AACY,61,Male,G3,Stage I,Hepatitis B,0:LIVING,47.63
+TCGA-DD-AACZ,63,Female,G4,Stage I,[Not Available],1:DECEASED,5.62
+TCGA-DD-AAD0,73,Female,G2,Stage I,Hepatitis B,0:LIVING,4.5
+TCGA-DD-AAD1,51,Female,G4,Stage I,Hepatitis B|Hepatitis C,0:LIVING,18.53
+TCGA-DD-AAD2,66,Male,G2,Stage I,Hepatitis B,0:LIVING,21.62
+TCGA-DD-AAD3,43,Male,G2,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,42.54
+TCGA-DD-AAD5,54,Male,G3,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,44.19
+TCGA-DD-AAD6,66,Male,G3,Stage IIIA,Hepatitis B,0:LIVING,22.08
+TCGA-DD-AAD8,73,Female,G2,Stage I,Hepatitis B|Hepatitis C,0:LIVING,40.05
+TCGA-DD-AADA,66,Female,G3,Stage I,Hepatitis B,0:LIVING,40.51
+TCGA-DD-AADB,51,Male,G4,Stage I,Hepatitis B,0:LIVING,40.8
+TCGA-DD-AADC,53,Male,G3,Stage I,Hepatitis B,1:DECEASED,13.96
+TCGA-DD-AADD,51,Male,G4,Stage I,Hepatitis B,0:LIVING,40.44
+TCGA-DD-AADF,64,Female,G4,Stage I,Hepatitis B,1:DECEASED,3.78
+TCGA-DD-AADG,70,Male,G3,Stage IIIA,Alcohol consumption|Hepatitis B,0:LIVING,37.61
+TCGA-DD-AADI,43,Female,G3,Stage I,Hepatitis B,0:LIVING,35.64
+TCGA-DD-AADJ,70,Female,G3,Stage I,[Not Available],0:LIVING,35.02
+TCGA-DD-AADK,68,Female,G3,Stage II,Hepatitis B,0:LIVING,34.46
+TCGA-DD-AADL,58,Male,G4,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,20.89
+TCGA-DD-AADM,58,Male,G3,Stage II,Alcohol consumption|Hepatitis B,1:DECEASED,0.39
+TCGA-DD-AADN,59,Male,G4,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,29.5
+TCGA-DD-AADO,55,Male,G3,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,14.88
+TCGA-DD-AADP,45,Male,G3,Stage I,Hepatitis B,0:LIVING,15.05
+TCGA-DD-AADQ,59,Male,G3,Stage II,Alcohol consumption|Hepatitis B,0:LIVING,14.32
+TCGA-DD-AADR,58,Male,G3,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,66.62
+TCGA-DD-AADS,63,Male,G2,Stage I,Alcohol consumption|Hepatitis C,0:LIVING,15.57
+TCGA-DD-AADU,60,Male,G3,Stage II,Alcohol consumption,0:LIVING,18.2
+TCGA-DD-AADV,50,Male,G3,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,18.86
+TCGA-DD-AADW,48,Male,G3,Stage I,Hepatitis B,0:LIVING,19.28
+TCGA-DD-AADY,55,Female,G2,Stage I,Hepatitis B,0:LIVING,18.23
+TCGA-DD-AAE0,45,Female,G4,Stage IIIA,Hepatitis B,0:LIVING,18.23
+TCGA-DD-AAE1,52,Male,G3,Stage I,Hepatitis B,0:LIVING,18.13
+TCGA-DD-AAE2,51,Male,G3,Stage I,Hepatitis B,0:LIVING,20.96
+TCGA-DD-AAE3,50,Male,G2,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,18.59
+TCGA-DD-AAE4,49,Female,G1,Stage I,Hepatitis B,0:LIVING,19.97
+TCGA-DD-AAE6,59,Female,G2,Stage I,[Not Available],0:LIVING,4.63
+TCGA-DD-AAE7,72,Male,G2,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,21.16
+TCGA-DD-AAE9,69,Male,G3,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,23.72
+TCGA-DD-AAEA,65,Male,G3,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,18.89
+TCGA-DD-AAEB,60,Male,G2,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,15.7
+TCGA-DD-AAED,51,Male,G3,Stage I,Alcohol consumption|Hepatitis B,0:LIVING,25.07
+TCGA-DD-AAEE,55,Male,G4,Stage I,Hepatitis B,0:LIVING,26.61
+TCGA-DD-AAEG,59,Female,G3,Stage I,No History of Primary Risk Factors,0:LIVING,23.62
+TCGA-DD-AAEH,73,Male,G2,Stage I,[Not Available],0:LIVING,25.76
+TCGA-DD-AAEI,72,Male,G2,Stage I,Hepatitis B,0:LIVING,50.3
+TCGA-DD-AAEK,51,Male,G3,Stage II,Hepatitis B,0:LIVING,35.05
+TCGA-DD-AAVP,48,Male,G1,Stage I,Hepatitis B,0:LIVING,90.41
+TCGA-DD-AAVQ,38,Male,G2,Stage I,Hepatitis B,0:LIVING,89.62
+TCGA-DD-AAVR,44,Male,G2,Stage I,Hepatitis B,0:LIVING,82.56
+TCGA-DD-AAVS,56,Male,G2,Stage I,Hepatitis B,0:LIVING,59.89
+TCGA-DD-AAVU,46,Male,G2,Stage II,Hepatitis B,0:LIVING,72.34
+TCGA-DD-AAVV,56,Male,G3,Stage II,Hepatitis B,0:LIVING,80.65
+TCGA-DD-AAVW,35,Male,G2,Stage I,Hepatitis B,0:LIVING,76.12
+TCGA-DD-AAVX,38,Male,G2,Stage II,Hepatitis B,0:LIVING,56.44
+TCGA-DD-AAVY,56,Male,G2,Stage IIIA,No History of Primary Risk Factors,0:LIVING,64.72
+TCGA-DD-AAVZ,38,Male,G2,Stage I,Hepatitis B,0:LIVING,62.42
+TCGA-DD-AAW0,54,Male,G2,Stage I,Hepatitis B,0:LIVING,66.2
+TCGA-DD-AAW1,55,Male,G2,Stage IIIA,No History of Primary Risk Factors,0:LIVING,65.34
+TCGA-DD-AAW2,69,Male,G2,Stage I,Non-Alcoholic Fatty Liver Disease,0:LIVING,60.94
+TCGA-DD-AAW3,69,Male,G2,Stage I,No History of Primary Risk Factors,0:LIVING,53.65
+TCGA-ED-A459,47,Male,G2,Stage II,[Not Available],0:LIVING,29.89
+TCGA-ED-A4XI,58,Male,G3,Stage II,No History of Primary Risk Factors,0:LIVING,26.91
+TCGA-ED-A5KG,60,Female,G2,Stage II,No History of Primary Risk Factors,0:LIVING,28.06
+TCGA-ED-A627,74,Male,G2,Stage I,Alcohol consumption,0:LIVING,13.9
+TCGA-ED-A66X,35,Male,G3,Stage IIIA,Alcohol consumption,0:LIVING,13.34
+TCGA-ED-A66Y,51,Female,G3,Stage IIIA,No History of Primary Risk Factors,1:DECEASED,9.72
+TCGA-ED-A7PX,48,Female,G3,Stage II,No History of Primary Risk Factors,0:LIVING,0.2
+TCGA-ED-A7PY,20,Female,G3,Stage II,No History of Primary Risk Factors,0:LIVING,12.81
+TCGA-ED-A7PZ,61,Male,G2,Stage II,No History of Primary Risk Factors,0:LIVING,0.2
+TCGA-ED-A7XO,29,Male,G2,Stage IIIA,No History of Primary Risk Factors,0:LIVING,14.03
+TCGA-ED-A7XP,53,Female,G3,Stage II,No History of Primary Risk Factors,0:LIVING,13.14
+TCGA-ED-A82E,60,Female,G2,Stage IIIA,No History of Primary Risk Factors,0:LIVING,13.4
+TCGA-ED-A8O5,59,Female,G3,Stage IIIA,No History of Primary Risk Factors,0:LIVING,13.34
+TCGA-ED-A8O6,50,Female,G3,Stage IIIA,No History of Primary Risk Factors,1:DECEASED,1.84
+TCGA-ED-A97K,54,Male,G2,Stage IIIA,Alcohol consumption,0:LIVING,0.2
+TCGA-EP-A12J,62,Male,G1,Stage I,Hepatitis C,0:LIVING,18.73
+TCGA-EP-A26S,70,Male,G2,Stage I,Alcohol consumption,0:LIVING,19.97
+TCGA-EP-A2KA,52,Female,G3,Stage IIIA,No History of Primary Risk Factors,1:DECEASED,20.6
+TCGA-EP-A2KB,46,Female,G2,Stage I,Hepatitis C,1:DECEASED,19.58
+TCGA-EP-A2KC,62,Male,G3,Stage I,Hepatitis C,1:DECEASED,0.62
+TCGA-EP-A3JL,76,Male,G2,Stage I,Alcohol consumption,0:LIVING,9.95
+TCGA-EP-A3RK,73,Male,G2,Stage IIIA,Alcohol consumption,0:LIVING,11.93
+TCGA-ES-A2HS,80,Male,G2,Stage I,No History of Primary Risk Factors,1:DECEASED,22.6
+TCGA-ES-A2HT,54,Male,G2,Stage I,Hepatitis C,1:DECEASED,14.39
+TCGA-FV-A23B,70,Female,[Not Available],Stage II,Hepatitis C,1:DECEASED,60.84
+TCGA-FV-A2QQ,80,Male,G2,Stage I,Alcohol consumption,0:LIVING,23.95
+TCGA-FV-A2QR,75,Male,G1,Stage I,Other,1:DECEASED,19.09
+TCGA-FV-A3I0,76,Female,G2,Stage II,No History of Primary Risk Factors,0:LIVING,27.86
+TCGA-FV-A3I1,81,Female,G2,Stage II,Alcohol consumption,1:DECEASED,8.11
+TCGA-FV-A3R2,75,Male,[Not Available],Stage I,No History of Primary Risk Factors,1:DECEASED,6.37
+TCGA-FV-A3R3,38,Female,G2,Stage I,No History of Primary Risk Factors,1:DECEASED,12.02
+TCGA-FV-A495,51,Female,G2,Stage II,Hepatitis C,0:LIVING,0.03
+TCGA-FV-A496,84,Female,G2,Stage I,No History of Primary Risk Factors,0:LIVING,0.33
+TCGA-FV-A4ZP,78,Male,G2,Stage IIIA,Alcohol consumption,1:DECEASED,81.67
+TCGA-FV-A4ZQ,52,Male,G2,Stage I,Hepatitis C,0:LIVING,0.39
+TCGA-G3-A25S,64,Male,G2,Stage I,Alcohol consumption,1:DECEASED,13.67
+TCGA-G3-A25T,45,Female,G2,Stage IIIA,Hepatitis C,0:LIVING,51.02
+TCGA-G3-A25U,63,Female,G3,Stage I,Hepatitis B,0:LIVING,53.75
+TCGA-G3-A25V,68,Male,G2,Stage I,Alcohol consumption,0:LIVING,28.25
+TCGA-G3-A25X,73,Male,G3,Stage II,Hepatitis B,0:LIVING,58.44
+TCGA-G3-A25Y,52,Female,G3,Stage I,Hepatitis B,1:DECEASED,14.85
+TCGA-G3-A25Z,58,Male,G2,Stage I,Hepatitis B,0:LIVING,21.52
+TCGA-G3-A3CG,80,Male,G2,Stage I,Hepatitis C,0:LIVING,22.11
+TCGA-G3-A3CH,53,Male,G2,Stage IIIA,Hepatitis B,0:LIVING,25.62
+TCGA-G3-A3CI,71,Male,G2,Stage I,Non-Alcoholic Fatty Liver Disease,0:LIVING,5.91
+TCGA-G3-A3CJ,52,Male,G2,Stage II,Hepatitis C,0:LIVING,19.51
+TCGA-G3-A3CK,61,Male,G2,Stage I,Hepatitis B,0:LIVING,19.22
+TCGA-G3-A5SI,44,Male,G2,Stage II,Hepatitis C,1:DECEASED,25.23
+TCGA-G3-A5SJ,59,Male,G2,Stage I,Alcohol consumption|Hepatitis C,0:LIVING,22.93
+TCGA-G3-A5SK,58,Male,G1,Stage I,Hepatitis C,0:LIVING,24.44
+TCGA-G3-A5SL,70,Male,G2,Stage II,Alcohol consumption,0:LIVING,20.4
+TCGA-G3-A5SM,58,Male,G3,Stage II,Alcohol consumption|Hepatitis C,0:LIVING,17.08
+TCGA-G3-A6UC,65,Male,G2,Stage IIIB,Alcohol consumption,0:LIVING,22.04
+TCGA-G3-A7M5,76,Male,G2,Stage I,Alcohol consumption,0:LIVING,14.68
+TCGA-G3-A7M6,60,Female,G3,Stage I,Hepatitis C,0:LIVING,20.76
+TCGA-G3-A7M7,65,Male,G1,Stage I,Alcohol consumption,0:LIVING,11.86
+TCGA-G3-A7M8,31,Male,G1,Stage I,Alcohol consumption,0:LIVING,14.13
+TCGA-G3-A7M9,70,Male,G2,Stage IIIB,Hemochromatosis,1:DECEASED,1.84
+TCGA-G3-AAUZ,48,Male,G2,Stage I,Hepatitis B|Non-Alcoholic Fatty Liver Disease,0:LIVING,15.77
+TCGA-G3-AAV0,58,Male,G2,Stage I,Hepatitis B,0:LIVING,15.64
+TCGA-G3-AAV1,51,Male,G3,Stage IIIC,Hepatitis B,1:DECEASED,11.79
+TCGA-G3-AAV2,50,Male,G1,Stage I,Alcohol consumption|Hepatitis C,0:LIVING,12.22
+TCGA-G3-AAV3,58,Female,G2,Stage II,Alcohol consumption|Hepatitis C|Non-Alcoholic Fatty Liver Disease,0:LIVING,13.53
+TCGA-G3-AAV4,83,Female,G1,Stage I,Hepatitis B,1:DECEASED,0.89
+TCGA-G3-AAV5,67,Male,G2,Stage II,Alcohol consumption,0:LIVING,11.63
+TCGA-G3-AAV6,53,Female,G3,Stage IIIA,No History of Primary Risk Factors,1:DECEASED,2.14
+TCGA-G3-AAV7,38,Male,G2,Stage II,Hepatitis B,0:LIVING,11.86
+TCGA-GJ-A3OU,59,Male,G2,Stage I,Alcohol consumption|Non-Alcoholic Fatty Liver Disease|Other,0:LIVING,28.88
+TCGA-GJ-A6C0,75,Female,G2,Stage II,No History of Primary Risk Factors,1:DECEASED,1.02
+TCGA-GJ-A9DB,68,Male,G2,Stage I,No History of Primary Risk Factors,1:DECEASED,2.2
+TCGA-HP-A5MZ,78,Male,G2,Stage I,No History of Primary Risk Factors,1:DECEASED,2.99
+TCGA-HP-A5N0,90,Female,[Not Available],[Not Available],No History of Primary Risk Factors,1:DECEASED,37.68
+TCGA-K7-A5RF,64,Male,G1,Stage I,Hepatitis C,0:LIVING,20.73
+TCGA-K7-A5RG,66,Male,G1,Stage I,Alcohol consumption|Hepatitis C,0:LIVING,17.05
+TCGA-K7-A6G5,66,Male,G2,Stage I,Alcohol consumption|Hepatitis B|Hepatitis C|Hemochromatosis,0:LIVING,16.82
+TCGA-K7-AAU7,61,Male,G2,Stage II,Hepatitis C|Hemochromatosis,0:LIVING,11.79
+TCGA-KR-A7K0,65,Male,G1,Stage I,Alcohol consumption|Hepatitis C,1:DECEASED,2.14
+TCGA-KR-A7K2,64,Male,G1,Stage I,Hepatitis C,0:LIVING,27.23
+TCGA-KR-A7K7,61,Female,G1,Stage II,No History of Primary Risk Factors,0:LIVING,31.24
+TCGA-KR-A7K8,57,Male,G1,Stage I,No History of Primary Risk Factors,0:LIVING,29.76
+TCGA-LG-A6GG,79,Female,G2,Stage II,Other,0:LIVING,12.71
+TCGA-LG-A9QC,48,Male,G2,Stage I,No History of Primary Risk Factors,0:LIVING,13.96
+TCGA-LG-A9QD,68,Male,G2,Stage IIIA,No History of Primary Risk Factors,0:LIVING,12.02
+TCGA-MI-A75C,64,Male,G3,Stage I,Hepatitis C,0:LIVING,9.56
+TCGA-MI-A75E,61,Male,G2,Stage IIIC,Alcohol consumption|Hepatitis C,0:LIVING,16.66
+TCGA-MI-A75G,63,Male,G2,Stage II,Alcohol consumption|Hepatitis C,0:LIVING,22.93
+TCGA-MI-A75H,77,Male,[Not Available],[Not Available],Hepatitis C,0:LIVING,24.54
+TCGA-MI-A75I,61,Male,G1,[Not Available],Hepatitis C,0:LIVING,20.7
+TCGA-MR-A520,58,Male,G1,Stage I,Other,0:LIVING,7.52
+TCGA-MR-A8JO,34,Male,G3,Stage I,Alcohol consumption,0:LIVING,10.84
+TCGA-NI-A4U2,71,Male,G1,Stage IIIA,Alcohol consumption,1:DECEASED,58.84
+TCGA-NI-A8LF,74,Male,G3,Stage I,Alcohol consumption,0:LIVING,26.25
+TCGA-O8-A75V,54,Male,G2,Stage I,Alcohol consumption|Hepatitis B|Hepatitis C,0:LIVING,17.67
+TCGA-PD-A5DF,58,Female,G2,Stage IIIB,No History of Primary Risk Factors,1:DECEASED,20.99
+TCGA-QA-A7B7,48,Male,G2,Stage II,Hepatitis B,0:LIVING,3.09
+TCGA-RC-A6M3,24,Male,G3,Stage II,[Not Available],0:LIVING,0
+TCGA-RC-A6M4,74,Female,G2,Stage IIIA,No History of Primary Risk Factors,0:LIVING,0.72
+TCGA-RC-A6M5,20,Female,G2,Stage IVA,No History of Primary Risk Factors,0:LIVING,0.49
+TCGA-RC-A6M6,75,Male,G3,Stage II,Alcohol consumption,0:LIVING,0.3
+TCGA-RC-A7S9,47,Female,G3,Stage I,Hepatitis B,0:LIVING,21.02
+TCGA-RC-A7SB,53,Male,G2,Stage II,Hepatitis B,0:LIVING,19.32
+TCGA-RC-A7SF,66,Male,G2,Stage I,Hepatitis C,0:LIVING,19.02
+TCGA-RC-A7SH,42,Male,G3,Stage II,Hepatitis B,0:LIVING,15.37
+TCGA-RC-A7SK,59,Male,G3,Stage I,Hepatitis C,0:LIVING,15.51
+TCGA-RG-A7D4,69,Male,G2,Stage II,Hepatitis C,0:LIVING,36.07
+TCGA-T1-A6J8,68,Male,G2,[Not Available],Alcohol consumption,0:LIVING,0.76
+TCGA-UB-A7MA,62,Female,G2,Stage II,No History of Primary Risk Factors,0:LIVING,27.86
+TCGA-UB-A7MB,24,Male,G3,Stage II,No History of Primary Risk Factors,0:LIVING,19.74
+TCGA-UB-A7MC,59,Male,G3,Stage IIIA,Alcohol consumption|Hepatitis B,0:LIVING,16.43
+TCGA-UB-A7MD,67,Male,G3,Stage I,Alcohol consumption|Hepatitis C,1:DECEASED,1.71
+TCGA-UB-A7ME,51,Male,G2,Stage I,Hepatitis B,0:LIVING,15.97
+TCGA-UB-A7MF,56,Male,G2,Stage IIIA,Hepatitis B|Hepatitis C,1:DECEASED,7.03
+TCGA-UB-AA0U,60,Male,G2,Stage II,Non-Alcoholic Fatty Liver Disease,0:LIVING,10.74
+TCGA-UB-AA0V,69,Female,G1,Stage I,Hemochromatosis,0:LIVING,10.32
+TCGA-WJ-A86L,68,Female,G2,Stage I,No History of Primary Risk Factors,0:LIVING,11.33
+TCGA-WQ-A9G7,71,Female,G3,[Not Available],No History of Primary Risk Factors,0:LIVING,0.99
+TCGA-WQ-AB4B,62,Male,G2,Stage II,Alcohol consumption|Non-Alcoholic Fatty Liver Disease|Other,0:LIVING,12.98
+TCGA-WX-AA44,64,Female,G3,Stage I,Non-Alcoholic Fatty Liver Disease,0:LIVING,20.2
+TCGA-WX-AA46,61,Male,G1,Stage II,No History of Primary Risk Factors,0:LIVING,24.84
+TCGA-WX-AA47,33,Female,G2,Stage IIIA,No History of Primary Risk Factors,1:DECEASED,18.27
+TCGA-XR-A8TC,43,Female,G2,Stage I,Hepatitis B,0:LIVING,43.99
+TCGA-XR-A8TD,49,Female,G3,Stage IIIB,No History of Primary Risk Factors,0:LIVING,33.84
+TCGA-XR-A8TE,16,Male,G1,Stage IIIA,No History of Primary Risk Factors,0:LIVING,30.39
+TCGA-XR-A8TF,74,Male,G1,Stage I,Hepatitis B,1:DECEASED,22.77
+TCGA-XR-A8TG,58,Male,G2,Stage I,Hepatitis C,0:LIVING,29.5
+TCGA-YA-A8S7,68,Male,G3,Stage IIIA,Hepatitis C,1:DECEASED,13.53
+TCGA-ZP-A9CV,59,Male,G1,[Not Available],Alcohol consumption|Hepatitis C,1:DECEASED,35.74
+TCGA-ZP-A9CY,66,Female,G1,[Not Available],Non-Alcoholic Fatty Liver Disease,0:LIVING,25.69
+TCGA-ZP-A9CZ,72,Male,G1,[Not Available],Hepatitis B,0:LIVING,23.19
+TCGA-ZP-A9D0,67,Female,G1,[Not Available],Non-Alcoholic Fatty Liver Disease,0:LIVING,35.84
+TCGA-ZP-A9D1,56,Female,G2,[Not Available],Non-Alcoholic Fatty Liver Disease,0:LIVING,0.69
+TCGA-ZP-A9D2,51,Male,G2,[Not Available],Hepatitis C,1:DECEASED,25.13
+TCGA-ZP-A9D4,64,Female,G1,[Not Available],No History of Primary Risk Factors,0:LIVING,12.98
+TCGA-ZS-A9CD,73,Male,G2,Stage II,[Not Available],1:DECEASED,45.53
+TCGA-ZS-A9CE,79,Female,G1,Stage II,[Not Available],0:LIVING,40.77
+TCGA-ZS-A9CF,64,Male,G2,Stage II,Hemochromatosis,0:LIVING,79.24
+TCGA-ZS-A9CG,55,Male,G2,Stage II,[Not Available],0:LIVING,11.2

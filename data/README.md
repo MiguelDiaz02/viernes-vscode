@@ -9,6 +9,23 @@ Si los usas en un trabajo, cita al TCGA Research Network:
 *Comprehensive and Integrative Genomic Characterization of Hepatocellular Carcinoma*,
 Cell, 2017, 169(7):1327-1341.
 
+## `hcc_tabla.csv`: la tabla de la clase
+
+Es la tabla que usamos en la clase. **Una fila por paciente**, ya con las dos fuentes unidas y la
+expresión en escala log2(valor + 1), para poder empezar a analizar sin preparar nada.
+
+| Columna | Qué es |
+| --- | --- |
+| `id_paciente` | Identificador del paciente, por ejemplo `TCGA-2V-A95S` |
+| `grado` | Grado histológico del tumor: G1 (bien diferenciado) a G4 (poco diferenciado). Faltan 5 |
+| `edad` | Edad al diagnóstico, en años. Falta 1 |
+| `sexo` | `Male` o `Female` |
+| `AFP`, `CA9`, `TOP2A`, `ALB`, `GAPDH` | Expresión de cada gen, en log2(valor + 1) |
+
+371 pacientes × 9 columnas. Los valores faltantes están vacíos. Los dos archivos de abajo
+(`hcc_expresion.csv` y `hcc_clinicos.csv`) son los datos originales, de los que sale esta tabla;
+los usa la versión avanzada del análisis en `respaldo/analisis_hcc_completo`.
+
 ## Qué le quitamos al original
 
 | Original | Aquí |
