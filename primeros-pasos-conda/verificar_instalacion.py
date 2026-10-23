@@ -40,22 +40,22 @@ if v >= (3, 10):
 else:
     falta(
         f"Python {v.major}.{v.minor} es muy viejo (se necesita 3.10 o más)",
-        "activa el entorno: conda activate viernes-vscode",
+        "activa el entorno: .\\.venv\\Scripts\\Activate.ps1 (Windows) o conda activate viernes-vscode (macOS/Linux)",
     )
 
 if v >= (3, 14):
     aviso(
         f"Python {v.major}.{v.minor} es demasiado nuevo: algunos paquetes todavía no "
         "tienen versiones estables para él y el kernel de los notebooks puede fallar. "
-        "Usa el entorno de la clase (Python 3.12): conda activate viernes-vscode"
+        "Usa Python 3.12 (ver CREAR_KERNEL.md)"
     )
 
 # 2. ¿Es el entorno de la clase?
 print(f"          usando: {sys.executable}")
 if "viernes-vscode" not in sys.executable and ".venv" not in sys.executable:
     aviso(
-        "este Python no parece ser el entorno 'viernes-vscode'. "
-        "Si algo de abajo falla, ejecuta primero: conda activate viernes-vscode"
+        "este Python no parece ser el entorno de la clase (.venv en Windows, viernes-vscode en macOS/Linux). "
+        "Si algo de abajo falla, activa el entorno primero (ver CREAR_KERNEL.md)"
     )
 
 if sys.platform.startswith("win") and not (
@@ -63,8 +63,8 @@ if sys.platform.startswith("win") and not (
 ):
     falta(
         f"el entorno está en una ruta con acentos o espacios ({sys.prefix}) y se romperá al activarlo",
-        "borra el entorno (conda env remove -n viernes-vscode -y), luego ejecuta "
-        "conda config --add envs_dirs C:\\Users\\Public\\conda-envs y repite conda env create",
+        "crea el entorno en una ruta corta, sin acentos ni espacios (por ejemplo C:\\clases); "
+        "ver CREAR_KERNEL.md, W2",
     )
 
 # 3. Paquetes
@@ -83,15 +83,27 @@ for nombre, minimo in paquetes:
             if partes and partes < minimo:
                 falta(
                     f"{nombre} {version} (se necesita {'.'.join(map(str, minimo))} o más)",
-                    f"conda install -c conda-forge '{nombre}>={'.'.join(map(str, minimo))}'",
+                    f"python -m pip install --upgrade {nombre}",
                 )
                 continue
         ok(f"{nombre} {version}")
-    except ImportError:
+    except ModuleNotFoundError as error:
+        # El paquete de verdad no está (o el entorno no está activado)
         falta(
-            f"{nombre} no está instalado en este Python",
-            "conda env create -f primeros-pasos-conda/environment.yml  (o revisa que el entorno esté activado)",
+            f"{nombre} no está instalado en este Python ({error})",
+            "revisa que el entorno esté activado; si sí lo está, instala con: "
+            f"python -m pip install {nombre}",
         )
+    except Exception as error:  # noqa: BLE001
+        # El paquete está, pero algo dentro de él no se pudo cargar
+        mensaje = str(error)
+        falta(f"{nombre} está instalado pero no se pudo cargar: {mensaje}", "ver abajo")
+        if "Control de aplicaciones" in mensaje or "App Control" in mensaje or "blocked" in mensaje.lower():
+            print("          Windows bloqueó un archivo de ese paquete (Smart App Control).")
+            print("          Solución en Windows: usa un entorno virtual (no conda). Guía:")
+            print("          primeros-pasos-conda/CREAR_KERNEL.md")
+        else:
+            print("          Copia el mensaje de arriba y mándalo junto con esta salida.")
 
 # 3b. Backend de matplotlib: con Qt instalado, el kernel de los notebooks se cae
 try:
@@ -101,13 +113,12 @@ try:
     if "qt" in backend.lower():
         falta(
             f"matplotlib usa el backend '{backend}' (Qt) y el kernel de los notebooks se cae",
-            "borra y recrea el entorno: conda env remove -n viernes-vscode  y luego  "
-            "conda env create -f primeros-pasos-conda/environment.yml",
+            "borra y recrea el entorno (ver CREAR_KERNEL.md, «Borrar el kernel y empezar de nuevo»)",
         )
     else:
         ok(f"matplotlib usa el backend '{backend}'")
-except ImportError:
-    pass
+except Exception:  # noqa: BLE001
+    pass  # el error real ya se mostró en el paso 3
 
 # 3c. Álgebra lineal (BLAS): una DLL incompatible mata el proceso sin traceback.
 # Se prueba en un proceso aparte para que, si se cae, el verificador pueda avisar.
@@ -128,7 +139,7 @@ try:
         falta(
             f"numpy se cae al hacer álgebra lineal (código {prueba.returncode & 0xFFFFFFFF:#x}); "
             "los gráficos de los notebooks matarían el kernel",
-            'conda install -n viernes-vscode "libblas=*=*openblas"  y vuelve a correr este verificador',
+            "borra y recrea el entorno (ver CREAR_KERNEL.md) y vuelve a correr este verificador",
         )
 except (OSError, subprocess.SubprocessError):
     aviso("No se pudo probar el álgebra lineal de numpy.")
@@ -139,15 +150,18 @@ if shutil.which("ruff"):
 else:
     aviso("ruff no está instalado. No es indispensable para la clase.")
 
-# 5. Datos de la clase
-for archivo in ["data/metadatos_muestras.csv", "data/conteos.tsv"]:
-    if (RAIZ / archivo).exists():
-        ok(f"{archivo} encontrado")
-    else:
-        falta(
-            f"{archivo} no existe",
-            "ejecuta este script desde dentro de la carpeta viernes-vscode completa",
-        )
+# 5. Conexión a los datos de la clase (solo avisa; no impide continuar)
+URL_DATOS = "https://raw.githubusercontent.com/MiguelDiaz02/viernes-vscode/main/data/hcc_tabla.csv"
+try:
+    from urllib.request import urlopen
+
+    with urlopen(URL_DATOS, timeout=15) as respuesta:
+        if respuesta.status == 200:
+            ok("se pueden descargar los datos de la clase (hcc_tabla.csv)")
+        else:
+            aviso(f"la descarga de datos respondió {respuesta.status}")
+except Exception as error:  # noqa: BLE001
+    aviso(f"no se pudo descargar hcc_tabla.csv ({error}). Revisa tu internet.")
 
 # 6. Kernel registrado para notebooks
 try:
@@ -171,7 +185,7 @@ print()
 if problemas:
     print(f"Hay {len(problemas)} cosa(s) por resolver. Sigue las flechas -> de arriba.")
     print(
-        "Si te atoras, revisa la sección 'Problemas comunes' en primeros-pasos-conda/README.md\n"
+        "Si te atoras, revisa la sección 'Problemas comunes' en primeros-pasos-conda/CREAR_KERNEL.md\n"
     )
     sys.exit(1)
 else:

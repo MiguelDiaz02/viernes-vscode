@@ -1,6 +1,10 @@
 # Mis primeros pasos con conda
 
-Instalar Python y crear el entorno de la clase desde cero. Para **Windows, macOS y Linux** (Ubuntu, Linux Mint y similares).
+> ## Esta guía es para macOS y Linux
+> **Si usas Windows, no sigas esta guía:** usa el entorno virtual de **[CREAR_KERNEL.md → Ruta Windows](CREAR_KERNEL.md#ruta-windows--entorno-virtual-venv)**. En algunas computadoras con Windows, el entorno de conda no puede cargar matplotlib (*«Una directiva de Control de aplicaciones bloqueó este archivo»*).
+> **macOS y Linux:** haz esta guía, y después el kernel en [CREAR_KERNEL.md → Ruta macOS y Linux](CREAR_KERNEL.md#ruta-macos-y-linux--conda).
+
+Instalar Python y crear el entorno de la clase desde cero. Para **macOS y Linux** (Ubuntu, Linux Mint y similares).
 
 Tiempo: de 15 a 25 minutos, casi todo esperando. **Una sola vez.** Hazlo antes del 30 de octubre.
 
@@ -307,6 +311,7 @@ Todo lo de la clase funciona igual ahí. Al terminar, borra el codespace desde [
 | `viernes-vscode` no aparece en VS Code | VS Code todavía no lo detecta | Cierra y abre VS Code. Si sigue: **Ctrl + Shift + P** → *Python: Select Interpreter* → *Enter interpreter path* y pega la ruta de abajo |
 | El kernel del notebook se cae («The Kernel crashed») | Entorno creado con una versión vieja de esta guía, que instalaba Qt | Recréalo (ver abajo) |
 | El verificador marca `[FALTA]` en `matplotlib` o en el backend Qt | Mismo caso | Recréalo (ver abajo) |
+| **Windows:** `DLL load failed ... Una directiva de Control de aplicaciones bloqueó este archivo` | Windows bloquea un archivo de Pillow/matplotlib del entorno de conda | Recrear el entorno no lo arregla. Usa el entorno virtual: [CREAR_KERNEL.md → Camino B](CREAR_KERNEL.md) |
 | El kernel se cae justo al graficar y el verificador marca `[FALTA]` en «álgebra lineal» (**Windows**) | Una librería matemática (MKL) del entorno es incompatible con otra | Con el entorno activado: `conda install -n viernes-vscode "libblas=*=*openblas"` (responde `y`), reinicia el kernel en VS Code (botón **Restart**) y corre el verificador otra vez |
 | Cualquier otra cosa | | Mándale a g5diazcamposmiguel@gmail.com una captura de pantalla de la terminal completa |
 

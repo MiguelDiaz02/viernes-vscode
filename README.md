@@ -24,7 +24,7 @@ Cada paso tiene su guía, escrita para quien nunca ha usado la terminal.
 | --- | --- | --- |
 | 1 | Instalar VS Code y crear tu cuenta de GitHub | **[INSTALACION_VISUAL_STUDIO_CODE.pdf](INSTALACION_VISUAL_STUDIO_CODE.pdf)** (VS Code) + los pasos en [primeros-pasos-github](primeros-pasos-github/README.md#antes-de-empezar) (cuenta de GitHub) |
 | 2 | Instalar Git y aprender lo básico de la terminal. Para la clase solo hacen falta las partes 1 y 2; descargar este repositorio es opcional | **[primeros-pasos-github](primeros-pasos-github/README.md)** |
-| 3 | Instalar Python y crear el entorno de la clase | **[primeros-pasos-conda](primeros-pasos-conda/README.md)** |
+| 3 | Instalar Python y crear el entorno de la clase. **Windows:** entorno virtual (`venv`). **macOS y Linux:** conda | **Windows:** [CREAR_KERNEL.md](primeros-pasos-conda/CREAR_KERNEL.md#ruta-windows--entorno-virtual-venv) · **macOS y Linux:** [primeros-pasos-conda](primeros-pasos-conda/README.md) y luego [CREAR_KERNEL.md](primeros-pasos-conda/CREAR_KERNEL.md#ruta-macos-y-linux--conda) |
 | 4 | Elegir dónde vas a trabajar: una carpeta `clases` con ruta corta, sin acentos ni espacios (por ejemplo `C:\clases` o `~/clases`). En la clase creamos juntos la carpeta del proyecto. Necesitas internet: el script descarga los datos | — |
 
 Al terminar el paso 3, este comando debe decir **Todo listo**:
@@ -44,7 +44,7 @@ g5diazcamposmiguel@gmail.com con una captura de pantalla de todo lo que ves.
 | --- | --- |
 | [`INSTALACION_VISUAL_STUDIO_CODE.pdf`](INSTALACION_VISUAL_STUDIO_CODE.pdf) | Guía ilustrada, paso a paso, para instalar VS Code en Windows, macOS y Linux |
 | [`primeros-pasos-github/`](primeros-pasos-github/README.md) | Guía de la terminal, Git y GitHub, para Windows, macOS y Linux |
-| [`primeros-pasos-conda/`](primeros-pasos-conda/README.md) | Guía de instalación de Python y del entorno, más los archivos del entorno y el verificador |
+| [`primeros-pasos-conda/`](primeros-pasos-conda/CREAR_KERNEL.md) | Guía para crear el entorno y el kernel (`CREAR_KERNEL.md`: venv en Windows, conda en macOS y Linux), guía de conda para macOS y Linux, archivos del entorno y el verificador |
 | [`data/`](data/README.md) | Los datos de la clase (`hcc_tabla.csv`, y los originales `hcc_expresion.csv` y `hcc_clinicos.csv`): expresión de genes en 371 tumores de hepatocarcinoma, de TCGA. El script de la clase los descarga de aquí. También los datos inventados de la práctica en casa |
 | `respaldo/` | El análisis terminado de la clase como script (`analisis_hcc_clase.py`) y como cuaderno (`analisis_hcc_clase.ipynb`), por si te pierdes |
 | `scripts/` | Práctica en casa: cuatro scripts numerados. Cada uno tiene un error pequeño |
