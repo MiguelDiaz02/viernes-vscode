@@ -20,3 +20,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .ruff_cache/
+
+# Copias de datos que crea un notebook al ejecutarse dentro de respaldo/
+respaldo/data/

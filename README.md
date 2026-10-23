@@ -46,7 +46,7 @@ g5diazcamposmiguel@gmail.com con una captura de pantalla de todo lo que ves.
 | [`primeros-pasos-github/`](primeros-pasos-github/README.md) | Guía de la terminal, Git y GitHub, para Windows, macOS y Linux |
 | [`primeros-pasos-conda/`](primeros-pasos-conda/README.md) | Guía de instalación de Python y del entorno, más los archivos del entorno y el verificador |
 | [`data/`](data/README.md) | Los datos de la clase (`hcc_tabla.csv`, y los originales `hcc_expresion.csv` y `hcc_clinicos.csv`): expresión de genes en 371 tumores de hepatocarcinoma, de TCGA. El script de la clase los descarga de aquí. También los datos inventados de la práctica en casa |
-| `respaldo/` | El análisis terminado de la clase como script (`.py`) y como cuaderno (`.ipynb`), por si te pierdes. Los archivos `analisis_hcc_clase` son la versión corta de la clase; `analisis_hcc_completo`, la versión con funciones, para después |
+| `respaldo/` | El análisis terminado de la clase como script (`analisis_hcc_clase.py`) y como cuaderno (`analisis_hcc_clase.ipynb`), por si te pierdes |
 | `scripts/` | Práctica en casa: cuatro scripts numerados. Cada uno tiene un error pequeño |
 | `notebooks/` | Práctica en casa: un notebook de exploración, para comparar con los scripts |
 | [`ejercicios/`](ejercicios/) | Cinco ejercicios para después de la clase. Las soluciones se publican aquí cuando termina la clase |

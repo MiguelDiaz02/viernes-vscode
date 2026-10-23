@@ -23,8 +23,8 @@ expresión en escala log2(valor + 1), para poder empezar a analizar sin preparar
 | `AFP`, `CA9`, `TOP2A`, `ALB`, `GAPDH` | Expresión de cada gen, en log2(valor + 1) |
 
 371 pacientes × 9 columnas. Los valores faltantes están vacíos. Los dos archivos de abajo
-(`hcc_expresion.csv` y `hcc_clinicos.csv`) son los datos originales, de los que sale esta tabla;
-los usa la versión avanzada del análisis en `respaldo/analisis_hcc_completo`.
+(`hcc_expresion.csv` y `hcc_clinicos.csv`) son los datos originales, de los que sale esta tabla, sin unir ni transformar:
+sirven si quieres repetir la preparación por tu cuenta.
 
 ## Qué le quitamos al original
 
